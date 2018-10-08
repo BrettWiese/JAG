@@ -1,0 +1,312 @@
+body {
+    background: #3b6ea7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    overflow: auto;
+    font-family: sans-serif;
+}
+
+.desktop-icon {
+    position: relative;
+}
+
+.desktop-links {
+    position: absolute;
+    top: 1.5rem;
+}
+
+/*butttons*/
+
+#button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    display: inline;
+}
+
+
+.windows-box {
+    border: 2px solid #c0c0c0;
+    position: absolute;
+}
+
+.windows-box .title-bar {
+    position: absolute;
+    height: 20px;
+    top: -24px;
+    left: -2px;
+    border: 2px solid #c0c0c0;
+    background: #0300c3;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.title-bar .title-icon {
+    height: 18px;
+    max-height: 100%;
+    margin: 0 .25rem;
+}
+
+.title-bar .window-buttons {
+    height: 18px;
+    position: absolute;
+    right: 5px;
+}
+
+.windows-box.spotify {
+    width: 300px;
+    height: 380px;
+    top: 50px;
+    left: 142px;
+}
+
+#apple-window {
+    width: 300px;
+    height: 110px;
+    top: 540px;
+    left: 560px;
+}
+
+.windows-box.petition {
+    width: 927px;
+    height: 450px;
+    top: 24px;
+    left: 464px;
+    border: none;
+}
+
+.netscape {
+    position: relative;
+}
+
+.skin {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #c1bfc2;
+}
+/*start*/
+
+.start-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #c0c0c0;
+    border-top: 1px solid #c0c0c0;
+    z-index: 6;
+}
+
+#start-menu {
+    position: fixed;
+    bottom:50px;
+    left:0;
+    background-color: #c0c0c0;
+    border: 2px solid black;
+    border-top-color: white;
+    border-left-color:white;
+    z-index:2;
+}
+
+#start-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#start-menu ul li {
+    display: block;
+    color: #000;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+#start-menu ul li:hover {
+    background-color: #555;
+    color: white;
+    cursor: default;
+}
+
+#start-menu ul li img {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.extendable-hover:hover .extendable-content{
+    display:block;
+}
+
+.extendable-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width:250px;
+    right: -250px;
+    top: -2px;
+    background-color: #c0c0c0;
+    border: 2px solid black;
+    border-top-color: white;
+    border-left-color:white;
+}
+
+.extendable-content a {
+    display: block;
+    color: #000;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+.extendable-content a:hover {
+    background-color: #555;
+    color: white;
+    cursor: default;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-right: 10px ;
+  filter: blur(.5px);
+}
+
+/**/
+
+#submit {
+    background: #c0c0c0;
+    color: #0300c3;
+    border: none;
+}
+
+.desktop-icon-link {
+    display: block;
+    width: 134px;
+}
+
+.petition-cta {
+    position: absolute;
+    top: 219px;
+    width: 880px;
+    height: 197px;
+    left: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.petition-cta h4 img {
+    height: 50px;
+    padding-right: 1rem;
+}
+
+.petition-cta h4 {
+    display: flex;
+    align-items: center;
+}
+.insides {
+    display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 950px) {
+    .petition {
+        left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .start-bar {
+        display: none;
+    }
+
+    .buddy-list,
+    .random-start-buttons,
+    .desktop-icon-link {
+        display: none;
+    }
+
+    .windows-box.spotify,
+    .windows-box.messenger,
+    .windows-box.petition,
+    .windows-box.apple-music {
+        position: relative;
+        top: 24px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .windows-box.spotify,
+    .windows-box.petition,
+    .windows-box.apple-music {
+        top: 48px;
+    }
+
+    .start-bar {
+        max-width: 100vw;
+    }
+
+    .windows-box.petition img {
+        max-width: 100vw;
+    }
+
+    .petition-cta {
+        position: absolute;
+        top: 140px;
+        width: 90%;
+        height: unset;
+        left: 0px;
+        display: block;
+        padding: .5rem;
+    }
+    
+    .windows-box.petition {
+        height: unset;
+    }
+
+    .petition-cta h5 {
+        display: none;
+    }
+
+    .petition-cta h4 {
+        margin: .25rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .petition-cta {
+        top: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    .petition-cta {
+        top: 90px;
+    }
+}
+
+@media (max-width: 345px) {
+    .petition-cta {
+        top: 80px;
+    }
+}
+
