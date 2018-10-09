@@ -19,16 +19,16 @@
         (function() { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//d2yy16lkdmfg04.cloudfront.net/resource/chat.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
         })(); window.embeddedChatAsyncInit = function() { embeddedChat.init("10013"); }
     </script>
-    <title>Save AIM</title>
+    <title>JAG</title>
 </head>
 
 <body>
     <div id="everything-else">
         <div class="desktop-links">
-            <a class="desktop-icon-link" onclick="windowtoggle()" target="_blank">
+            <a class="desktop-icon-link"target="_blank">
                 <img class="desktop-icon" src="media/images/connecttotheinternet.png" alt="">
             </a>
-            <a class="desktop-icon-link" href="https://www.youtube.com/watch?v=EfAr9DgMB9g" target="_blank">
+            <a class="desktop-icon-link ie-button">
                 <img class="desktop-icon" src="media/images/internetexplorer.png" alt="">
             </a>
             <a class="desktop-icon-link">
@@ -44,33 +44,49 @@
                 <img class="desktop-icon" src="media/images/recyclebin.png" alt="">
             </a>
         </div>
-</div>
-        </div>
-        <div id="spotify-window" class="windows-box spotify ui-draggable ui-draggable-handle">
-            <div class="title-bar"><img class="title-icon" src="media/images/spotifyicon.png" alt="">Spotify<img class="window-buttons" src="media/images/windowbuttons.png" alt=""></div>
+    </div>
+        <div id="spotify-window" class="windows-box spotify ui-draggable ui-draggable-handle">        
+            <div class="title-bar">
+                <img class="title-icon" src="media/images/spotifyicon.png" alt="">Spotify
+                <img class="window-buttons" src="media/images/windowbuttons.png" alt="">
+                <div class="exit spotify-button"></div>
+            </div>
             <iframe src="https://open.spotify.com/embed?uri=spotify:track:2w3Uc0eGOJcxrgG6NZUvQN&amp;view=coverart" width="100%" height="380" frameborder="0" allowtransparency="true"></iframe>
         </div>
-        <div id="apple-window" class="window windows-box apple-music ui-draggable ui-draggable-handle">
-            <div class="title-bar"><img class="title-icon" src="media/images/appleicon.png" alt="">Apple<img class="window-buttons" src="media/images/windowbuttons.png" alt=""></div>
+        <div id="apple-window" class="window windows-box apple-music ui-draggable ui-draggable-handle">          
+            <div class="title-bar">
+                <img class="title-icon" src="media/images/appleicon.png" alt="">
+                Apple
+                <img class="window-buttons" src="media/images/windowbuttons.png" alt="">
+                <div class="exit apple-button"></div>
+            </div>
             <iframe src="https://tools.applemusic.com/embed/v1/song/1432231963?country=us" height="110px" width="100%" frameborder="0"></iframe>
         </div>
-        <div class="windows-box petition ui-draggable ui-draggable-handle">
-            <img class="netscape" src="media/images/netscape.png" alt="">
-            <div class="petition-cta">
-                <img class="insides" src="media/images/characters.png">
+        <div id="ie-window" class="windows-box ui-draggable ui-draggable-handle">
+            <div class="exit ie-button"></div>
+            <img src="media/images/ie.png">
+            <div>
+                <img class="insides" src="media/images/characters.png">               
             </div>
-
         </div>
+
+        
+
         <div id="start-menu" class="close">
             <ul>
                 <li class="extendable-hover">   
                     <a>
-                        <img src="media/images/icons/internetexplorer.png">
+                        <img src="media/images/icons/folder.png">
                         <span>Programs</span><span class="right-arrow">&#9658;</span>
                     </a>
                     <div class="extendable-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
+                            <a href="#">Link 3</a>
                             <a href="#">Link 3</a>
                     </div>
                 </li>
@@ -83,11 +99,15 @@
         </div>
         <div class="start-bar">
             <a class="start-button">
-                <img height="50px" src="media/images/start.png" alt="">
+                <img src="media/images/icons/windows.png" alt="">
+                <span style="font-weight: bold; font-size: 20px;"> Start </span>
             </a>
-            <a href="https://www.youtube.com/user/TImeflies4850" target="_blank"><img height="50px" src="media/images/time.gif" alt="" style="float: right;"></a>
+            <div class="right-side-start">
+                <img src="media/images/icons/exc.png" alt="">
+                <img src="media/images/icons/error.png" alt="">
+                <span class="error" style="font-weight: bold; font-size: 20px;"> ERROR </span>
+            </div>
         </div>
-    </div>   
     <script src="script.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ body {
     margin: 0;
     overflow: auto;
     font-family: sans-serif;
+    cursor: default;
 }
 
 .desktop-icon {
@@ -86,10 +87,6 @@ body {
     border: none;
 }
 
-.netscape {
-    position: relative;
-}
-
 .skin {
     position: absolute;
     content: '';
@@ -102,6 +99,29 @@ body {
 }
 /*start*/
 
+.start-button {
+    position: fixed;
+    bottom:5px;
+    left:5px;
+    height: 40px;
+    background-color: #c0c0c0;
+    border: 2px solid black;
+    border-top-color: white;
+    border-left-color:white;
+}
+
+.start-button:active {
+    border: 2px solid white;
+    border-top-color: black;
+    border-left-color:black;
+}
+
+.start-button img {
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+
 .start-bar {
     position: fixed;
     bottom: 0;
@@ -113,6 +133,33 @@ body {
     border-top: 1px solid #c0c0c0;
     z-index: 6;
 }
+
+.right-side-start{
+    position: fixed;
+    bottom:5px;
+    right:5px;
+    height: 40px;
+    background-color: #c0c0c0;
+    border: 2px solid white;
+    border-top-color: black;
+    border-left-color: black;
+}
+
+.right-side-start img {
+    height: 100%;
+    width: auto;
+    vertical-align: middle;
+}
+
+.error {
+    color: red;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
 
 #start-menu {
     position: fixed;
@@ -141,7 +188,7 @@ body {
 #start-menu ul li:hover {
     background-color: #555;
     color: white;
-    cursor: default;
+
 }
 
 #start-menu ul li img {
@@ -189,42 +236,34 @@ span {
 }
 
 /**/
-
-#submit {
-    background: #c0c0c0;
-    color: #0300c3;
-    border: none;
-}
-
 .desktop-icon-link {
     display: block;
     width: 134px;
 }
 
-.petition-cta {
+#ie-window {
     position: absolute;
-    top: 219px;
-    width: 880px;
-    height: 197px;
-    left: 10px;
+    top: 19px;
+    left: 420px;
+    overflow: hidden;
+    width:800;
+    height:576;
+}
+
+.insides {
     display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
     overflow: hidden;
 }
 
-.petition-cta h4 img {
-    height: 50px;
-    padding-right: 1rem;
-}
-
-.petition-cta h4 {
-    display: flex;
-    align-items: center;
-}
-.insides {
-    display: block;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.exit {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 20px;
+    height: 20px;
 }
 
 @media (max-width: 950px) {

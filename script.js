@@ -16,6 +16,13 @@
 	  	$("#spotify-window").toggleClass("close");
 	});
 
+	$('.ie-button').click(function() {
+	  	$("#ie-window").toggleClass("close");
+	});
+
+
 	$('.start-button').click(function() {
 	  	$("#start-menu").toggleClass("close");
+
 	});
+	
