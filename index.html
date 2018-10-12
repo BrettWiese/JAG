@@ -45,7 +45,7 @@
             </a>
         </div>
     </div>
-        <div id="spotify-window" class="windows-box spotify ui-draggable ui-draggable-handle">        
+        <div id="spotify-window" class="windows-box drag-me spotify ui-draggable ui-draggable-handle">        
             <div class="title-bar">
                 <img class="title-icon" src="media/images/spotifyicon.png" alt="">Spotify
                 <img class="window-buttons" src="media/images/windowbuttons.png" alt="">
@@ -53,7 +53,7 @@
             </div>
             <iframe src="https://open.spotify.com/embed?uri=spotify:track:2w3Uc0eGOJcxrgG6NZUvQN&amp;view=coverart" width="100%" height="380" frameborder="0" allowtransparency="true"></iframe>
         </div>
-        <div id="apple-window" class="window windows-box apple-music ui-draggable ui-draggable-handle">          
+        <div id="apple-window" class="window windows-box apple-music drag-me ui-draggable ui-draggable-handle">          
             <div class="title-bar">
                 <img class="title-icon" src="media/images/appleicon.png" alt="">
                 Apple
@@ -62,25 +62,43 @@
             </div>
             <iframe src="https://tools.applemusic.com/embed/v1/song/1432231963?country=us" height="110px" width="100%" frameborder="0"></iframe>
         </div>
-        <div id="ie-window" class="windows-box ui-draggable ui-draggable-handle">
+        <div id="ie-window" class=" drag-me windows-box ui-draggable ui-draggable-handle">
             <div class="exit ie-button"></div>
             <img src="media/images/ie.png">
             <div>
                 <img class="insides" src="media/images/characters.png">               
             </div>
         </div>
+        
+        <div id="solitaire-window" class="drag-me windows-box ui-draggable ui-draggable-handle">
+             <iframe class="iframe" src="games/solitairewin.html"></iframe>
+            <div class="title-bar">
+                <img class="title-icon" src="media/images/icons/solitaire.png" alt="">
+                Solitaire
+                <img class="window-buttons" src="media/images/windowbuttons.png" alt="">
+                <div class="exit solitaire-button"></div>
+            </div>            
+        </div>
 
         
 
-        <div id="start-menu" class="close">
-            <ul>
-                <li class="extendable-hover">   
-                    <a>
-                        <img src="media/images/icons/folder.png">
-                        <span>Programs</span><span class="right-arrow">&#9658;</span>
-                    </a>
-                    <div class="extendable-content">
-                            <a href="#">Link 1</a>
+        <div id="start">
+            <div id="start-menu">
+                <ul>
+                    <li class="extendable-hover">   
+                        <a>
+                            <img src="media/images/icons/folder.png">
+                            <span>Programs</span><span class="right-arrow">&#9658;</span>
+                        </a>
+                        <div class="extendable-content extendable-menu-1">                
+                            <div class="extendable-menu-1-hover">
+                            <a href="#">Link 1<span class="right-arrow">&#9658;</span></a>
+                                <div class="extendable-content extendable-menu-2">
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
                             <a href="#">Link 3</a>
@@ -88,17 +106,37 @@
                             <a href="#">Link 3</a>
                             <a href="#">Link 3</a>
                             <a href="#">Link 3</a>
-                    </div>
-                </li>
-                <li><a><img src="media/images/icons/computer.png"><span>My Computer</span></a></li>
-                <li class="spotify-button"><a><img src="media/images/icons/spotify.png"><span>Spotify</span></a></li>
-                <li class="apple-button"><a><img src="media/images/icons/apple.png"><span>Apple Music</span></a></li>
-                <li><a><img src="media/images/icons/internetexplorer.png"><span>Internet Explorer</span></a></li>
-                <li><a><img src="media/images/icons/shutdown.png"><span>Shut Down</span></a></li>
-            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="media/images/icons/computer.png"><span>My Computer</span>
+                        </a>
+                    </li>
+                    <li class="spotify-button">
+                        <a><img src="media/images/icons/spotify.png"><span>Spotify</span>
+                        </a>
+                    </li>
+                    <li class="apple-button">
+                        <a>
+                            <img src="media/images/icons/apple.png"><span>Apple Music</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="media/images/icons/internetexplorer.png"><span>Internet Explorer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="media/images/icons/shutdown.png"><span>Shut Down</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="start-bar">
-            <a class="start-button">
+            <a onclick="document.getElementById('start').style.display='block'" class="start-button">
                 <img src="media/images/icons/windows.png" alt="">
                 <span style="font-weight: bold; font-size: 20px;"> Start </span>
             </a>
