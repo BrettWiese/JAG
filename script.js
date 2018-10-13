@@ -24,14 +24,17 @@ $('.solitaire-button').click(function() {
   	$("#solitaire-window").toggleClass("close");
 });
 
-
-
+$(document).ready(function () {
+    setTimeout(function(){
+        $('#solitaire-window').toggleClass("close");
+    }, 10);
+});
 
 var modal = document.getElementById('start')
 
 window.onclick = function(event) {
     if (event.target == modal) {
     	console.log('in if statement')
-        $("#start-menu").toggleClass("close");
+        modal.style.display = "none";
     }
 }

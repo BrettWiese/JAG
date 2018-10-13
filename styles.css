@@ -152,6 +152,8 @@ body {
     width: 100%;
     height: 100%;
     display:none;
+    z-index: 6;
+    position:fixed;
 }
 
 .extendable-hover:hover .extendable-menu-1{
