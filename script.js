@@ -32,6 +32,6 @@ var modal = document.getElementById('start')
 window.onclick = function(event) {
     if (event.target == modal) {
     	console.log('in if statement')
-        modal.style.display = "none";
+        $("#start-menu").toggleClass("close");
     }
 }

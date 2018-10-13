@@ -136,6 +136,18 @@ body {
     vertical-align: middle;
 }
 
+#start-menu .extendable-content img {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#start-menu .extendable-content p {
+    height: 5px;
+    width: auto;
+    vertical-align: middle;
+}
+
 #start {
     width: 100%;
     height: 100%;

@@ -70,7 +70,7 @@
             </div>
         </div>
         
-        <div id="solitaire-window" class="drag-me windows-box ui-draggable ui-draggable-handle">
+        <div id="solitaire-window" class="drag-me windows-box ui-draggable ui-draggable-handle close">
              <iframe class="iframe" src="games/solitairewin.html"></iframe>
             <div class="title-bar">
                 <img class="title-icon" src="media/images/icons/solitaire.png" alt="">
@@ -90,7 +90,7 @@
                             <img src="media/images/icons/folder.png">
                             <span>Programs</span><span class="right-arrow">&#9658;</span>
                         </a>
-                        <div class="extendable-content extendable-menu-1">                
+                        <div class="extendable-content extendable-menu-1">         
                             <div class="extendable-menu-1-hover">
                             <a href="#">Link 1<span class="right-arrow">&#9658;</span></a>
                                 <div class="extendable-content extendable-menu-2">
@@ -99,7 +99,10 @@
                                     <a href="#">Link 3</a>
                                 </div>
                             </div>
-                            <a href="#">Link 2</a>
+                            <a class="solitaire-button" href="#">
+                                <img src="media/images/icons/solitaire.png">
+                                <span>Solitaire</span>
+                            </a>
                             <a href="#">Link 3</a>
                             <a href="#">Link 3</a>
                             <a href="#">Link 3</a>
@@ -114,7 +117,9 @@
                         </a>
                     </li>
                     <li class="spotify-button">
-                        <a><img src="media/images/icons/spotify.png"><span>Spotify</span>
+                        <a>
+                        <img src="media/images/icons/spotify.png">
+                        <span>Spotify</span>
                         </a>
                     </li>
                     <li class="apple-button">
