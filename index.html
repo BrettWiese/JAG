@@ -3,27 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3b6ea7">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="Save AIM">
-    <meta property="og:description" content="Don't let the best form of communication in human history fall victim to an untimely demise. SAVE INSTANT MESSENGER!!!">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <meta property="og:image" content="">
-    <meta property="og:url" content="https://saveaim.com">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="Save AIM">
-    <meta name="twitter:image:alt" content="Save AIM">
-    <link rel="shortcut icon" href="runningman.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript">
-        (function() { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//d2yy16lkdmfg04.cloudfront.net/resource/chat.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-        })(); window.embeddedChatAsyncInit = function() { embeddedChat.init("10013"); }
-    </script>
     <title>JAG</title>
 </head>
 
 <body>
-    <div id="everything-else">
+    <p class="hide">look at u </p>
+    <div id="loading">
+        <div class="video_contain">
+        <video id="loading-video" autoplay="autoplay" loop="loop">
+            <source src="media/videos/loadscreen.mp4" type="video/mp4" />
+            <img src="video.gif"/>
+        </video>
+    </div>
+        <img src="media/images/loadscreen.jpg">
+    </div>
+    <div id="desktop">
         <div class="desktop-links">
             <a class="desktop-icon-link"target="_blank">
                 <img class="desktop-icon" src="media/images/connecttotheinternet.png" alt="">
@@ -40,11 +40,12 @@
             <a class="desktop-icon-link spotify-button">
                 <img class="desktop-icon" src="media/images/spotify.png" alt="">
             </a>
-            <a class="desktop-icon-link" href="https://www.youtube.com/watch?v=iYc5EVdsOdU" target="_blank">
+            <a class="desktop-icon-link" target="_blank">
                 <img class="desktop-icon" src="media/images/recyclebin.png" alt="">
             </a>
         </div>
     </div>
+    <div id="windows-section" class="">
         <div id="spotify-window" class="windows-box drag-me spotify ui-draggable ui-draggable-handle">        
             <div class="title-bar">
                 <img class="title-icon" src="media/images/spotifyicon.png" alt="">Spotify
@@ -69,9 +70,8 @@
                 <img class="insides" src="media/images/characters.png">               
             </div>
         </div>
-        
         <div id="solitaire-window" class="drag-me windows-box ui-draggable ui-draggable-handle ">
-             <iframe class="iframe" src="games/solitairewin.html"></iframe>
+            <iframe class="iframe" src="games/solitairewin.html"></iframe>
             <div class="title-bar">
                 <img class="title-icon" src="media/images/icons/solitaire.png" alt="">
                 Solitaire
@@ -79,78 +79,77 @@
                 <div class="exit solitaire-button"></div>
             </div>            
         </div>
-
-        
-
-        <div id="start">
-            <div id="start-menu">
-                <ul>
-                    <li class="extendable-hover">   
-                        <a>
-                            <img src="media/images/icons/folder.png">
-                            <span>Programs</span><span class="right-arrow">&#9658;</span>
-                        </a>
-                        <div class="extendable-content extendable-menu-1">         
-                            <div class="extendable-menu-1-hover">
-                            <a href="#">Link 1<span class="right-arrow">&#9658;</span></a>
-                                <div class="extendable-content extendable-menu-2">
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                    <a href="#">Link 3</a>
-                                </div>
+    </div>
+    <div id="start">
+        <div id="start-menu">
+            <ul>
+                <li class="extendable-hover">   
+                    <a>
+                        <img src="media/images/icons/folder.png">
+                        <span>Programs</span><span class="right-arrow">&#9658;</span>
+                    </a>
+                    <div class="extendable-content extendable-menu-1">         
+                        <div class="extendable-menu-1-hover">
+                        <a href="#">Link 1<span class="right-arrow">&#9658;</span></a>
+                            <div class="extendable-content extendable-menu-2">
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                <a href="#">Link 3</a>
                             </div>
-                            <a class="solitaire-button" href="#">
-                                <img src="media/images/icons/solitaire.png">
-                                <span>Solitaire</span>
-                            </a>
-                            <a href="#">Link 3</a>
-                            <a href="#">Link 3</a>
-                            <a href="#">Link 3</a>
-                            <a href="#">Link 3</a>
-                            <a href="#">Link 3</a>
-                            <a href="#">Link 3</a>
                         </div>
-                    </li>
-                    <li>
-                        <a>
-                            <img src="media/images/icons/computer.png"><span>My Computer</span>
+                        <a class="solitaire-button" href="#">
+                            <img src="media/images/icons/solitaire.png">
+                            <span>Solitaire</span>
                         </a>
-                    </li>
-                    <li class="spotify-button">
-                        <a>
-                        <img src="media/images/icons/spotify.png">
-                        <span>Spotify</span>
-                        </a>
-                    </li>
-                    <li class="apple-button">
-                        <a>
-                            <img src="media/images/icons/apple.png"><span>Apple Music</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <img src="media/images/icons/internetexplorer.png"><span>Internet Explorer</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <img src="media/images/icons/shutdown.png"><span>Shut Down</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 3</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li>
+                    <a>
+                        <img src="media/images/icons/computer.png"><span>My Computer</span>
+                    </a>
+                </li>
+                <li class="spotify-button">
+                    <a>
+                    <img src="media/images/icons/spotify.png">
+                    <span>Spotify</span>
+                    </a>
+                </li>
+                <li class="apple-button">
+                    <a>
+                        <img src="media/images/icons/apple.png"><span>Apple Music</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="ie-button">
+                        <img src="media/images/icons/internetexplorer.png">
+                        <span>Internet Explorer</span>
+                    </a>
+                </li>
+                <li>
+                    <a value="Reload Page" onClick="document.location.reload(true)">
+                        <img src="media/images/icons/shutdown.png"><span>Shut Down</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="start-bar">
-            <a onclick="document.getElementById('start').style.display='block'" class="start-button">
-                <img src="media/images/icons/windows.png" alt="">
-                <span style="font-weight: bold; font-size: 20px;"> Start </span>
-            </a>
-            <div class="right-side-start">
-                <img src="media/images/icons/exc.png" alt="">
-                <img src="media/images/icons/error.png" alt="">
-                <span class="error" style="font-weight: bold; font-size: 20px;"> ERROR </span>
-            </div>
+    </div>
+    <div class="start-bar">
+        <a onclick="document.getElementById('start').style.display='block'" class="start-button">
+            <img src="media/images/icons/windows.png" alt="">
+            <span style="font-weight: bold; font-size: 20px;"> Start </span>
+        </a>
+        <div class="right-side-start">
+            <img src="media/images/icons/exc.png" alt="">
+            <img src="media/images/icons/error.png" alt="">
+            <span class="error" style="font-weight: bold; font-size: 20px;"> ERROR </span>
         </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

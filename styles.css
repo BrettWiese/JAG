@@ -7,15 +7,23 @@ body {
     overflow: auto;
     font-family: sans-serif;
     cursor: default;
+
 }
 
-.desktop-icon {
-    position: relative;
+#desktop {
+-webkit-column-count: 2; */
+    -moz-column-count: 2;
+    column-count: 1;
+    height: 100%;
+    width: 200px;
+    flex-flow: column;
+}
+
+.desktop-icon-link {
 }
 
 .desktop-links {
-    position: absolute;
-    top: 1.5rem;
+    display: block;
 }
 
 /*butttons*/
@@ -32,6 +40,11 @@ body {
 
 .open {
     display: inline;
+}
+
+.hide {
+    position: absolute;
+    top: 400px;
 }
 
 
@@ -151,9 +164,10 @@ body {
 #start {
     width: 100%;
     height: 100%;
-    display:none;
+    display: none;
     z-index: 6;
-    position:fixed;
+    position: fixed;
+    top:0;
 }
 
 .extendable-hover:hover .extendable-menu-1{
@@ -214,7 +228,9 @@ span {
 .right-arrow {
     text-align: right;
 }
-/**/
+
+/*windows*/
+
 .desktop-icon-link {
     display: block;
     width: 134px;
@@ -332,9 +348,39 @@ span {
 
 
 
+/* load screen */
 
+#loading-video {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+    z-index: 100;
+}
 
+#loading img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+    z-index: 90;
+}
 
+.video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
 
 
 @media (max-width: 950px) {
