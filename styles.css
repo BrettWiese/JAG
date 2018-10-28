@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
     font-family: sans-serif;
     cursor: default;
 
@@ -135,6 +135,7 @@ body {
     color: #000;
     padding: 16px 16px;
     text-decoration: none;
+    height:50px;
 }
 
 #start-menu ul li:hover {
@@ -187,11 +188,33 @@ body {
     border-left-color:white;
 }
 
+.extendable-hover:hover .extendable-menu-MyComputer{
+    display:block;
+}
+
+.extendable-menu-MyComputer {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width:250px;
+    right: -250px;
+    top: 80px;
+    background-color: #c0c0c0;
+    border: 2px solid black;
+    border-top-color: white;
+    border-left-color:white;
+}
+
+.extendable-menu-MyComputer  .right-arrow {
+    padding: 0 !important;
+}
+
 .extendable-menu-1-hover:hover .extendable-menu-2{
     display:block;
 }
 
-.extendable-menu-2 {
+
+.extendable-content-MyDocuments {
     display: none;
     position: absolute;
     z-index: 1;
@@ -202,6 +225,10 @@ body {
     border: 2px solid black;
     border-top-color: white;
     border-left-color:white;
+}
+
+.extendable-hover-MyDocuments:hover .extendable-content-MyDocuments{
+    display:block;
 }
 
 .extendable-content a {
@@ -226,7 +253,8 @@ span {
 }
 
 .right-arrow {
-    text-align: right;
+    float: right;
+    padding: 16px;
 }
 
 /*windows*/
@@ -252,6 +280,8 @@ span {
     color: white;
     display: flex;
     align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .title-bar .title-icon {
@@ -304,16 +334,112 @@ span {
     top: 19px;
     left: 420px;
     overflow: hidden;
-    width:800;
-    height:576;
+    width:800px;
+    height:576px;
 }
+
+.ie-container {
+    display: block;
+    position: absolute;
+    top: 114px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    height: 494px;
+}
+
+#mail-window {
+    position: absolute;
+    top: 55px;
+    left: 190px;
+    overflow: hidden;
+    width:480px;
+    height:321px;
+}
+
+.mail-container {
+    display: block;
+    position: absolute;
+    top: 99px;
+    width: 99.5%;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    height: 494px;
+    background-color: white;
+}
+
+.contact {
+    color: #aaa;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    }
 
 #solitaire-window {
     position: absolute;
-    top: 40px;
-    left: 420px;
-    width:800;
-    height:576;
+    top: 60px;
+    left: 460px;
+    width:800px;
+    height:576px;
+}
+
+#notepad-window-1 {
+    position: absolute;
+    top: 80px;
+    left: 480px;
+    width:300px;
+    height:500px;
+    background-color: white;
+}
+
+#notepad-window-2 {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width:300px;
+    height:500px;
+    background-color: white;
+}
+
+#notepad-window-3 {
+    position: absolute;
+    top: 120px;
+    left: 520px;
+    width:300px;
+    height:500px;
+    background-color: white;
+}
+
+#notepad-window-4 {
+    position: absolute;
+    top: 140px;
+    left: 540px;
+    width:300px;
+    height:500px;
+    background-color: white;
+}
+
+#notepad-window-5 {
+    position: absolute;
+    top: 160px;
+    left: 560px;
+    width:300px;
+    height:500px;
+    background-color: white;
+}
+
+.notepad {
+    position: absolute;
+}
+
+.lyrics {
+    color: black;
+    position: absolute;
+    display: block;
+    height: 95%;
+    overflow-y: scroll;
 }
 
 .iframe {
@@ -339,7 +465,7 @@ span {
     height: 20px;
 }
 
-.drag-me {
+.dragme {
     position:absolute;
     height:100%;
     width: 100%;
@@ -353,13 +479,14 @@ span {
 #loading-video {
     position: fixed;
     top: 0;
-    bottom: 0;
-    right: 0;
+    /* bottom: 0; */
+    /* right: 0; */
     left: 0;
-    margin: auto;
-    min-height: 50%;
-    min-width: 50%;
+    /* margin: auto; */
+    height: 100%;
+    width: 100%;
     z-index: 100;
+    background: black;
 }
 
 #loading img {
@@ -382,87 +509,101 @@ span {
     height: 200%;
 }
 
-
-@media (max-width: 950px) {
-    .petition {
-        left: 0;
+@media screen and (max-width: 600px) {
+    body{
+        overflow: auto;
     }
-}
-
-@media (max-width: 600px) {
-    .start-bar {
-        display: none;
+    .close {
+        display:;
+    }
+    #desktop {
+            width: 100vw;
     }
 
-    .buddy-list,
-    .random-start-buttons,
     .desktop-icon-link {
-        display: none;
+    display: inline-block;
+    width: 18%;
+}
+
+    #ie-window{
+        top: 150px;
+        left:0px;
+        width: 100vw;
+        height: auto;
+    } 
+    #ie-window img {
+        width: 100vw;
     }
 
-    .windows-box.spotify,
-    .windows-box.messenger,
-    .windows-box.petition,
-    .windows-box.apple-music {
-        position: relative;
-        top: 24px;
-        left: 0;
-        right: 0;
-        width: 100%;
-    }
-
-    .windows-box.spotify,
-    .windows-box.petition,
-    .windows-box.apple-music {
-        top: 48px;
-    }
-
-    .start-bar {
-        max-width: 100vw;
-    }
-
-    .windows-box.petition img {
-        max-width: 100vw;
-    }
-
-    .petition-cta {
-        position: absolute;
-        top: 140px;
-        width: 90%;
-        height: unset;
-        left: 0px;
+    .ie-container {
         display: block;
-        padding: .5rem;
-    }
-    
-    .windows-box.petition {
-        height: unset;
-    }
-
-    .petition-cta h5 {
-        display: none;
+        position: absolute;
+        top: 21%;
+        width: 200%;
+        overflow-y: hidden;
+        overflow-x: scroll;
     }
 
-    .petition-cta h4 {
-        margin: .25rem 0;
+    #ie-window iframe {
+        position: relative;
+        width: 100%;
+        height: 125% !important;
+          -moz-transform: scale(0.5, 0.5); 
+          -webkit-transform: scale(0.5, 0.5); 
+          -o-transform: scale(0.5, 0.5);
+          -ms-transform: scale(0.5, 0.5);
+          transform: scale(0.5, 0.5); 
+          -moz-transform-origin: top left;
+          -webkit-transform-origin: top left;
+          -o-transform-origin: top left;
+          -ms-transform-origin: top left;
+          transform-origin: top left;
+        }
+
+    #apple-window {
+        display: block;
+        width: 100vw;
+        height: 110px;
+        left: 0px;
+        top: 700px;
     }
+
+    #spotify-window {
+        display: block;
+        width: 100vw;
+        height: 110px;
+        left: 0px;
+        top: 890px;
+    }
+
+
+    .notepad {
+    position: relative !important;
+    display: inline-block !important;
+    width: 30% !important;
+    top: 1010px !important;
+    left: 15px !important;
+    margin: auto;
+    }
+
+    #mail-window {
+        display: block;
+        width: 100vw;
+        left: 0px;
+        top: 2303px;
+    }
+
+    #mail-window img{
+        width: 100vw;
+        background-color: white;
+    }
+
+    #solitaire-window{
+        display: block;
+        width: 99vw;
+        left: 0px;
+        top: 2703px;
+    }
+
+
 }
-
-@media (max-width: 480px) {
-    .petition-cta {
-        top: 110px;
-    }
-}
-
-@media (max-width: 400px) {
-    .petition-cta {
-        top: 90px;
-    }
-}
-
-@media (max-width: 345px) {
-    .petition-cta {
-        top: 80px;
-    }
-}
-
